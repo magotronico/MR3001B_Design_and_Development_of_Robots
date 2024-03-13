@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+    <!-- Launch file for running different ROS nodes -->
+
+    <!-- Run the open-loop control node for the puzzlebot -->
+    <node name="puzzlebot_routine" pkg="minc4" type="puzzlebot_routine.py" output="screen"/>
+
+    <!-- Run the open-loop control node for the smoother
+    <node name="smoother_routine" pkg="minc4" type="smoother_routine.py" output="screen"/> -->
+
+    <!-- Uncomment the following line to run the speed characterization node -->
+    <!-- This node saves the output values [v, w] for different setpoints of [v, w] in output.txt and output2.txt files -->
+    <!-- <node name="speed_characterization" pkg="minc4" type="speed_characterization.py" output="screen"/> -->
+
+    <!-- Uncomment the following line to run a simple line routine node -->
+    <!-- This node is useful for testing communication with the robot by moving it in a straight line -->
+    <!-- <node name="line_routine" pkg="minc4" type="line_routine.py" output="screen"/> -->
+
+    <!-- Uncomment the following line to run the rqt_graph node -->
+    <!-- This node displays a graphical representation of the ROS computation graph -->
+    <!-- <node name="rqt_graph" pkg="rqt_graph" type="rqt_graph" /> -->
+
+</launch>
