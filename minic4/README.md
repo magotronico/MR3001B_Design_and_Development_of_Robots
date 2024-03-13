@@ -47,11 +47,19 @@ d. Observe the Puzzlebot's movement to confirm successful communication and cont
 The `puzzlebot_routine` node implements an open-loop control routine for the Puzzlebot using a state machine programming approach. This node sends velocity commands to the Puzzlebot to make it move in a square pattern.
 Demo video
 
-![Demo Video puzzlebot_routine](/miscellaneous/Manufacturing%20Systems%20Automation%20(Snapshot%201)%20[Running]%20-%20Oracle%20VM%20VirtualBox%202024-03-12%2010-24-46.mp4)
+[![Demo Video puzzlebot_routine](miscellaneous/puzzlebot.mp4)](miscellaneous/puzzlebot.mp4)
+
+https://github.com/magotronico/MR3001B_Design_and_Development_of_Robots/assets/131409850/c1977b47-2434-436b-be36-88ef48f9f180
+
+
 
 The `smoother_routine` node is also included in the launch file, although its purpose is to move the smoother instead of the puzzlebot.
 
-![Demo Video puzzlebot_routine](/miscellaneous/smoother.mp4)
+[![Demo Video puzzlebot_routine](miscellaneous/smoother.mp4)](miscellaneous/smoother.mp4)
+
+https://github.com/magotronico/MR3001B_Design_and_Development_of_Robots/assets/131409850/8ad1eb9d-65e0-48b2-ad3a-a9456cc54c7c
+
+
 
 To run the open-loop control routine, launch the required nodes by running the provided launch file:
 ```
